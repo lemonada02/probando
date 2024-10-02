@@ -7,6 +7,9 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotNull;
 
+import java.util.List;
+
+import org.springframework.samples.petclinic.card.Card;
 import org.springframework.samples.petclinic.model.BaseEntity;
 
 import lombok.Getter;
@@ -22,6 +25,10 @@ public class User extends BaseEntity {
 	String username;
 
 	String password;
+
+	List<Card> mazo;
+
+	Boolean isNarrator;
 
 	@NotNull
 	@ManyToOne(optional = false)
