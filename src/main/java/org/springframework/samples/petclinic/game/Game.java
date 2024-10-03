@@ -25,6 +25,7 @@ public class Game extends BaseEntity {
     @NotNull
     private Integer numberOfRounds;
 
+
     @OneToMany(mappedBy = "game")
     private List<Scoreboard> scoreboards;
 

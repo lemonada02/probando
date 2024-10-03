@@ -12,5 +12,4 @@ public class GameService {
     GameService(GameRepository gameRepository) {
         this.gameRepository = gameRepository;
     }
-    
 }
