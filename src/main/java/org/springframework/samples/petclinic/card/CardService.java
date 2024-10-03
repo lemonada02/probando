@@ -8,10 +8,10 @@ import org.springframework.stereotype.Service;
 @Service
 public class CardService {
     
-    private final CardRepository cardRepository;
+    protected CardRepository cardRepository;
 
     @Autowired
-    public CardService(CardRepository cardRepository) {
+    CardService(CardRepository cardRepository) {
         this.cardRepository = cardRepository;
     }
 
